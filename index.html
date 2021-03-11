@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>My Family Book</title>
+</head>
+<body>
+    <h1>My Family Book</h1>
+    <img id="image" src="images.png">
+    <h3 id="name">Joginder Singh</h3>
+    <div>
+        <button type="button" onclick="nextslide()">Next</button>
+    </div>
+    <script>
+        var names=["Gagandeep Kaur","Divnoorpreet Kaur","Gurmukh Singh"];
+        var images=["cartoon-mom-png-cartoon-mother-clipart-clip-art-library-cartoon-mother-png-920_2340.png","258-2587144_welcome-teenage-girl-cartoon-png.png","images.jpg"];
+        var i=0;
+        function nextslide() {
+            document.getElementById("name").innerHTML= names[i];
+            document.getElementById("image").src= images[i];i++
+        }
+    </script>
+</body>
+</html>
